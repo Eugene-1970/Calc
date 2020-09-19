@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CALCAPP</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        header, nav, main, footer {
+          text-align: center;
+        }
+        
+        #prev {
+          text-align: left;
+          padding: 5px;
+          padding-left: 14px;
+          color: rgb(167, 167, 167);
+          font-size: 8pt;
+        }
+        .cbtn {
+            height: 60px;
+        }
+        .cell {
+          padding: 5px;
+        }
+    </style>
+    
+  </head>
+  <body>
+    <div class="my-5">
+      <div class="container">
+        <header>
+            <div><h1>CalcApp</h1></div>
+            <div class="row">
+              <div id="prev" class="cell"></div>
+              <div class="input-group input-group-lg cell">
+                  <input type="number" class="form-control" name="res" id="result">
+                  <div class="input-group-append">
+                      <button 
+                          title="Стереть текущее число"
+                          class="btn btn-outline-secondary clr-btn"
+                          type="button">
+                          C
+                      </button>
+                      <button 
+                          title="Сбросить память кулькулятора"
+                          class="btn btn-outline-secondary rst-btn"
+                          type="button">
+                          R
+                      </button>
+                  </div>
+              </div>
+            </div>
+        </header>
+        <nav class="row row-cols-3">
+          <div class="col cell"><button class="btn btn-outline-primary btn-block cbtn func-btn" opt=plus>+</button></div>
+          <div class="col cell"><button class="btn btn-outline-primary btn-block cbtn func-btn" opt=mins>-</button></div>
+          <div class="col cell"><button class="btn btn-outline-primary btn-block cbtn func-btn" opt=mult>&times;</button></div>
+          <div class="col cell"><button class="btn btn-outline-primary btn-block cbtn func-btn" opt=div>&divide;</button></div>
+          <div class="col cell"><button class="btn btn-outline-primary btn-block cbtn opt-plmn">&plusmn;</button></div>
+          <div class="col cell"><button class="btn btn-outline-success btn-block cbtn opt-eq">=</button></div>
+        </nav>
+        <main class="row row-cols-3">
+
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">1</button></div>
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">2</button></div>
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">3</button></div>
+
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">4</button></div>
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">5</button></div>
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">6</button></div>
+
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">7</button></div>
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">8</button></div>
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">9</button></div>
+
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn num-btn" type="button">0</button></div>
+          <div class="col cell"><button class="btn btn-block btn-outline-secondary cbtn opt-pnt" type="button">,</button></div>
+
+        </main>
+        
+      </div>
+      <footer>2020 &copy; Eugene-1970</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
